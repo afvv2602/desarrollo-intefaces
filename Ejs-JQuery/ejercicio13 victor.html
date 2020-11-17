@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        var x;
+        x=$(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos(){
+            alert("hey");
+            $("p:first").dblclick(dobleClic);
+            $(".izq").click(alerta);
+            $(".hov").hover(hovereando,NoHovereando);
+        }
+
+        function dobleClic(){
+            var x;
+            x=$(this);
+            x.hide()
+        }
+
+        function alerta(){
+            alert("has pulsado el parrafo");
+        }
+
+        function hovereando(){
+            alert("Sal de ahi");
+        }
+        function NoHovereando(){
+            alert("Bien hecho");
+        }
+    </script>
+</head>
+<body>
+    <h1>doble click</h1>
+    <p>Buenos dias</p>
+
+    <br>
+    <br>
+
+    <h1>click izquierdo</h1>
+    <p class="izq">Buenas tardes</p>
+
+    <br>
+    <br>
+
+    <h1>Hover</h1>
+    <p class="hov">Buenas noches</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      var x;
+      x = $(document);
+      x.ready(inicializarEventos);
+
+      function inicializarEventos() {
+        var x = $("#btnHide");
+        x.click(ocultarElemento);
+      }
+
+      function ocultarElemento() {
+        var x = $("#btnHide");
+        x.hide("slow");
+      }
+    </script>
+  </head>
+  <body>
+    <br><br>
+    <input type="button" id="btnHide" value="Ocultar" />
+  </body>
+</html>
+

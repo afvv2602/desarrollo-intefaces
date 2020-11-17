@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      var x;
+      x = $(document);
+      x.ready(inicializarEventos);
+
+      function inicializarEventos() {
+        var x = $("#btnHide");
+        x.click(ocultarElemento);
+      }
+
+      function ocultarElemento() {
+        var x = $("a");
+        x.hide("slow");
+      }
+    </script>
+  </head>
+  <body>
+
+    <p>Ir a Youtube:</p>
+    <a href="https://www.youtube.com/?gl=ES&hl=es">Click aqui</a>
+
+    <p>Ir a Twitter:</p>
+    <a href="https://twitter.com/home?lang=es">Click aqui</a>
+
+    <br><br>
+    <input type="button" id="btnHide" value="Ocultar" />
+  </body>
+</html>

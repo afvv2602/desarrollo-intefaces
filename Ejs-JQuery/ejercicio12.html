@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      var x;
+      x = $(document);
+      x.ready(inicializarEventos);
+
+      function inicializarEventos() {
+        var x = $("html");
+        x.click(funcionAlert);
+      }
+
+      function funcionAlert() {
+        alert("Pulsaste el botón izquierdo");
+      }
+    </script>
+  </head>
+  <body>
+    <br><br>
+    <p id="parrafo">
+      La teoría del caos es la rama de las matemáticas, la física y otras
+      ciencias (biología, meteorología, economía, entre otras) que trata ciertos
+      tipos de sistemas complejos y sistemas dinámicos no lineales muy sensibles
+      a las variaciones en las condiciones iniciales.
+      Pequeñas variaciones en dichas condiciones iniciales pueden implicar
+      grandes diferencias en el comportamiento futuro, imposibilitando la
+      predicción a largo plazo. Esto sucede aunque estos sistemas son en rigor
+      deterministas, es decir; su comportamiento puede ser completamente
+      determinado conociendo sus condiciones iniciales.
+    </p>
+ 
+  </body>
+</html>
+

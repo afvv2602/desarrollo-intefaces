@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio 9 Jquery</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+    var x;
+    x = $(document);
+    x.ready(initEventos);
+    
+    function initEventos()
+    {
+        var x = $("#btn1");
+        x.click(ocultarEnlace1);
+
+        var x = $("#btn2");
+        x.click(ocultarEnlace2);
+          
+    }
+
+    function ocultarEnlace1(){
+       var x = $("a[target='_blank']");
+       x.hide();
+    }
+
+    function ocultarEnlace2(){
+       $("#linkLocal").hide("slow");
+    }
+
+
+</script>
+</head>
+<body>
+    <a href="" target="_blank">Se abre en otra ventana</a><br>
+    <a href="" id="linkLocal">Se abre aquí</a>
+    <br><br>
+    <input type="button" id = "btn1" value="Oculta 1">&nbsp; &nbsp;
+    <input type="button" id = "btn2" value="Oculta 2">
+</body>
+</html>
