@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+       var x;
+        //x=$(document);
+        //x.ready(inicializarEventos);
+		
+		$(document).ready(inicializarEventos);
+
+        function inicializarEventos(){
+            $("#btn").click(presionBoton);
+        }
+
+        function presionBoton(){
+           // var x;
+            //x=$("*");
+            //x.hide("slow");
+			$("*").hide("slow");
+			
+        }
+    </script>
+</head>
+<body>
+    <h1 class="intro">Soy un encabezado</h1>
+    <p class="intro">Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <button id="btn">Pulsame</button>
+</body>
+</html>

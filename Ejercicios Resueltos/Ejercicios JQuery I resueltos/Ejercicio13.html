@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Ejercicio 13</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        var x;
+        x = $(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos() {
+            var x;
+            x = $("p");
+            x.hover(In, Out);
+        }
+
+        function In() {
+            $("p").css("background-color","green");
+        }
+
+        function Out() {
+            $("p").css("background-color","red");
+        }
+
+    </script>
+</head>
+<body>
+    <p>Esto es un parrafo</p>
+</body>
+</html>

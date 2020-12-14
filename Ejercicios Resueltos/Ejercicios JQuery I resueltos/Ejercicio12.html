@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Ejercicio 12</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+var x;
+x=$(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos()
+{
+  var x;
+  x=$("p");
+  x.mousedown(function(e){
+	if(e.button==0){
+        alert("Se ha hecho click con el boton izquierdo");
+    }
+	
+      if(e.button==2){
+        alert("Se ha hecho click con el boton derecho");
+    }
+  });
+}
+</script>
+</head>
+<body>
+<p>Click con el boton izquierdo</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>attr demo</title>
+  <style>
+  img {
+    padding: 10px;
+	width: 90px;
+	height: 90px;
+	
+  }
+  div {
+    color: red;
+    font-size: 24px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<img>
+<img>
+<img>
+ 
+<div><b>Attribute of Ajax</b></div>
+ 
+<script>
+//El atributo ALT es útil bajo el título de accesibilidad web,
+// ya que permite a los usuarios de Internet con discapacidades visuales 
+//que un programa de lectura les lea el texto del atributo ALT. Por lo tanto, 
+//las imágenes serán "visibles" para las personas con problemas de visión.
+$( "img" ).attr({
+  src: "imagen.gif",
+  title: "jQuery",
+  alt: "Mandala animado de colores"
+});
+$( "div" ).text( $( "img" ).attr( "alt" ) );
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+	$(document).ready(function(){
+	$("a").click(function( event ) {
+	event.preventDefault();
+	$("a").hide();
+  	});
+	});
+    </script>    
+</head>
+<body>
+    <a href="https://www.telepizza.es/productos/pizzas" >Enlace 1</a>
+    <a href="https://www.telepizza.es/productos/pizzas" >Enlace 2</a>
+    
+</body>
+</html>

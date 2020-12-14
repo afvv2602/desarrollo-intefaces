@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Ejercicio 8</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+var x;
+x=$(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos()
+{ 
+  $("#button1").click(ocultarEnlace1);
+  $("#button2").click(ocultarEnlace2)}
+
+function ocultarEnlace1()
+{
+  $("a[target=_blank]").hide();
+  alert("Se ocultara el enlace");
+}
+
+function ocultarEnlace2()
+{
+  $("a[target!=_blank]").hide();
+  alert("Se ocultara el enlace");
+}
+
+</script>
+</head>
+<body>
+<a target="_blank" href="https://www.google.es">Google</a>
+<input type="button" id="button1" value="ocultar">
+<a target="" href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>
+<input type="button" id="button2" value="ocultar">
+
+</body>
+</html>

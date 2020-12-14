@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Ejercicio11</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+var x;
+x=$(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos()
+{
+  var x;
+  x=$("p");
+  x.dblclick(dobleClick);
+}
+
+function dobleClick()
+{
+  var x;
+  x=$(this);
+  x.hide()
+}
+</script>
+</head>
+<body>
+<p>Doble clic para ocultar</p>
+</body>
+</html>

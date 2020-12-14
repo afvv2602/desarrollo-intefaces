@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        var x;
+        x=$(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos(){
+           
+            $("#btn").click(presionBoton);
+        }
+
+        function presionBoton(){
+            
+            var x;
+            x = $("ul:first li:first");
+            x.hide("slow");
+        }
+    </script>
+</head>
+<body>
+    <h1>Lista 1</h1>
+        <ul>
+            <li>Tortilla</li>
+            <li>Jamon</li>
+            <li>Queso</li>
+        </ul>
+        <ul>
+            <li>Coca Cola</li>
+            <li>Leche</li>
+            <li>Te</li>
+        </ul>
+        <button id="btn">Pulsame</button>
+</body>
+</html>

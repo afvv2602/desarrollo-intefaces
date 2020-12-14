@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Banco</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQUERY -->
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script type="text/javascript" src="scriptBanco.js"></script>
+</head>
+<body class="bg-gradient-primary">
+    <!-- Container fluid: width 100% -->
+    <div class="p-3 mb-2 bg-primary text-white container-fluid" >
+        <h3><b>MI BANCO</b></h3>
+    </div>
+
+    <!-- Container: width más reducido -->
+    <div class="p-3 mb-2 bg-primary text-white container" >
+        <h2><b>OPERACIONES</b></h2>
+    </div>
+
+    <!-- Div flex: divs de derecha a izquierda, Justify content around: divs centrados-->
+    <div class="p-3 mb-2 bg-primary text-white container d-flex justify-content-around"> 
+        <div class="bg-primary">
+          <p>
+              <b>TU DINERO:</b>
+              <input type="number" id="dinero" value="0" readonly>    <b>€</b>
+          </p>
+
+          <p>
+              <b>INGRESAR EN LA CUENTA:</b>
+              <input type="number" id="ingreso" value="" step="0.01" min="0">
+              <input type="button" id="add" value="+">
+          </p>
+          
+          <p>
+              <b>RETIRAR DINERO:</b>
+              <input type="number" id="retirada" value="" step="0.01" min="0">
+              <input type="button" id="retirar" value="-">
+          </p>
+        </div>
+
+        <div class="bg-primary">
+          <p>
+              <b>ENVIAR DINERO</b>
+          </p>
+          
+          <p>
+            <b>NÚMERO DE TELÉFONO:</b>
+            <input type="text"  id="contacto" readonly>
+        </p>
+
+          <p>
+              <b>AGENDA:</b>
+              <select id="contactos" class="select">
+
+                <option id="0" hidden="true">Selecciona un contacto</option>
+                <option id="647875751">Juan José</option>
+                <option id="685165896">Luis Miguel</option>
+                <option id="666531196">María</option>
+                <option id="63185712">Marta</option>
+                <option id="653365896">Pablo</option>
+              </select>
+          </p>
+          
+          <p>
+              <b>CANTIDAD:</b>
+              <input type="number" id="dineroEnviar" value="0" step="0.01" min="0">    <b>€</b>
+              <input type="button" id="enviar" value="->">
+          </p>
+        </div>
+      </div>
+
+      <div class="p-3 mb-2 bg-primary text-white container" >
+        <h2><b>HISTORIAL</b></h2>
+      </div>
+
+      <div class="p-3 mb-2 bg-primary text-white container" >
+
+        <div class="d-flex flex-row-reverse">
+          <!-- Position absolute: el botón no influirá en la colocación de los elementos del div. -->
+          <input type="button" id="borrarHistorial" value="Borrar" style="position: absolute;">
+        </div>
+
+        <div id="historial">
+           <!-- Aqui se colocarán los elementos del historial -->
+           
+        </div>
+       
+      </div>
+</body>
+</html>
+
+
+ 
